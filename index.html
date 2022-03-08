@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="pt-br" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta charec set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- Page Title -->
+        <title>Passeios Recreativos®</title>		
+		<!-- Meta Description -->
+        <meta name="description" content="Página destinada a oferecer os serviços de passeios de cachorro e pet sitter">
+        <meta name="keywords" content="passeios, passeios recreativos, cachorro, cão, passeios de cachorro, dog walker">
+        <meta name="author" content="Bruno, Moacir, Anderson">
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Google Font -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+		<!-- CSS
+		================================================== -->
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- Twitter Bootstrap css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- jquery.fancybox  -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- animate -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+		<!-- media-queries -->
+        <link rel="stylesheet" href="css/media-queries.css">
+        <!-- icon -->
+        <link rel="shortcut icon" href="img/paw.ico" type="image/x-icon" />
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+
+
+         
+		<!-- Inclusão do Jquery Validate -->
+		<script type="text/javascript" src="js/jquery-validade.js" ></script>
+        <!-- Inclusão do Jquery mask -->
+        <script type="text/javascript" src="js/jquery.mask.min.js" ></script>
+    	
+		
+       
+        
+        <script src="js/valida_campos.js"></script>
+        
+       
+
+
+<script type="text/javascript">
+			$(document).ready(function() {
+				jQuery.noConflict();
+				  (function($) {
+				  $(function() {				  
+				  $('.tel').mask('(99)99999-9999'); //telefone				  
+				});
+				})(jQuery);				
+				$(function(){
+					$('#num').bind('keydown',soNums); // o "#input" é o input que vc quer aplicar a funcionalidade
+				});				 
+				function soNums(e){				 
+					//teclas adicionais permitidas (tab,delete,backspace,setas direita e esquerda)
+					keyCodesPermitidos = new Array(8,9,37,39,46);					 
+					//numeros e 0 a 9 do teclado alfanumerico
+					for(x=48;x<=57;x++){
+						keyCodesPermitidos.push(x);
+					}					 
+					//numeros e 0 a 9 do teclado numerico
+					for(x=96;x<=105;x++){
+						keyCodesPermitidos.push(x);
+					}					 
+					//Pega a tecla digitada
+					keyCode = e.which;					 
+					//Verifica se a tecla digitada é permitida
+					if ($.inArray(keyCode,keyCodesPermitidos) != -1){
+						return true;
+					}   
+					return false;
+				}
+			});
+		</script>
+    </head>
+	
+    <body id="body" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+	
+		<!-- preloader -->
+		<div id="preloader">
+			<img src="img/preloader.gif" alt="Preloader">
+		</div>
+		<!-- end preloader -->
+
+        <!-- 
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-fixed-top navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+                    <a class="navbar-brand" href="#body">
+						<h1 id="logoNovo" class="showg-font">Passeios Recreativos®</h1>
+					</a>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current"><a href="#body">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#time">Nosso Time</a></li>
+                         <li><a href="#facts">Avaliações</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		
+		
+        <!--
+        Home Slider
+        ==================================== -->
+		
+		<section id="slider">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			
+				<!-- Indicators bullet -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+				<!-- End Indicators bullet -->				
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					
+					<!-- single slide -->
+					<div class="item active" style="background-image: url(img/banner1.jpg);">
+						<div class="carousel-caption">
+							<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Passeios Recreativos</span></h2>
+							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">Sem tempo</span> para o seu PET?</h3>
+							<p data-wow-duration="1000ms" class="wow slideInRight animated">Nós passeamos com ele!!</p>							
+							<ul class="social-links text-center">								
+								<li><a href="https://pt-br.facebook.com/passeiosrecreativos/" target="blank"><i class="fa fa-facebook fa-lg"></i></a></li>	
+								<li><a href="https://andersontosca.wixsite.com/passeiosrecreativos" target="blank"><i class="fa fa-dribbble fa-lg"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end single slide -->
+					
+					<!-- single slide -->
+					<div class="item" style="background-image: url(img/banner3.jpg);">
+						<div class="carousel-caption">
+							<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Passeios Recreativos</span></h2>
+							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">Agende</span> uma visita sem compromisso!</h3>
+							<p data-wow-duration="1000ms" class="wow slideInRight animated">Primeiro passeio GRÁTIS!</p>
+							<ul class="social-links text-center">								
+								<li><a href="https://pt-br.facebook.com/passeiosrecreativos/" target="blank"><i class="fa fa-facebook fa-lg"></i></a></li>	
+								<li><a href="https://andersontosca.wixsite.com/passeiosrecreativos" target="blank"><i class="fa fa-dribbble fa-lg"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end single slide -->
+					
+					<!-- single slide -->
+					<div class="item" style="background-image: url(img/banner2.jpg);">
+						<div class="carousel-caption">
+							<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Passeios Recreativos</span></h2>
+							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">Pet Sitter!</span> Cuidamos no local onde vivem.</h3>
+							<p data-wow-duration="1000ms" class="wow slideInRight animated">Primeiro passeio GRÁTIS!</p>
+
+
+							<ul class="social-links text-center">								
+								<li><a href="https://pt-br.facebook.com/passeiosrecreativos/" target="blank"><i class="fa fa-facebook fa-lg"></i></a></li>	
+								<li><a href="https://andersontosca.wixsite.com/passeiosrecreativos" target="blank"><i class="fa fa-dribbble fa-lg"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end single slide -->
+
+
+
+
+
+
+
+
+				</div>
+				<!-- End Wrapper for slides -->
+				
+			</div>
+		</section>
+		
+        <!--
+        End Home SliderEnd
+        ==================================== -->
+		
+        <!--
+        Features
+        ==================================== -->
+		
+		<section id="servicos" class="features">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+						<h2>Serviços</h2>
+						<div class="devider"><i class="fa fa-paw fa-lg"></i></div>
+					</div>
+
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-home fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Pet Sitter:</h3>
+								<p>Oferecemos o serviço de PET SITTER, cuidando de qualquer animal de estimação, no local onde vivem, por ocasião de férias, fériados ou viagens prolongadas! (VAGAS LIMITADAS)</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-pencil fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Semanais ou Diários:</h3>
+								<p>A frequência dos passeios proporciona aos animais de estimação uma vida mais saudável e para que não passem muito tempo presos, sozinhos ou sem atividades!</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-check fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Dicas:</h3>
+								<p>Brinquedos e petiscos diferentes deixam seus bichinhos mais tranquilos quando estão sozinhos!</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+						
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        End Features
+        ==================================== -->
+		
+		
+        <!--
+        Our Works
+        ==================================== -->
+		
+		<section id="galeria" class="works clearfix">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center">
+						<h2>Galeria</h2>
+						<div class="devider"><i class="fa fa-paw fa-lg"></i></div>
+					</div>
+					
+					<div class="sec-sub-title text-center">
+						<p>Alguns dos nossos clientes!</p>
+					</div>
+					
+					<div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
+						<ul class="text-center">
+							<li><a href="javascript:;" data-filter="all" class="active filter">Todos</a></li>
+							<li><a href="javascript:;" data-filter=".simples" class="filter">Passeio Simples</a></li>
+							<li><a href="javascript:;" data-filter=".duplo" class="filter">Passeio Duplo</a></li>							
+							<li><a href="javascript:;" data-filter=".petSitter" class="filter">Pet Sitter</a></li>							
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="project-wrapper">
+			
+				<figure class="mix work-item duplo">
+					<img src="img/works/item-1.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Cachorros de médio porte!" href="img/works/item-1.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Médio porte!</h4>
+						<p>Passeio Duplo</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item simples">
+					<img src="img/works/item-2.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Pastor Belga" href="img/works/item-2.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Grande porte!</h4>
+						<p>Passeio Simples</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item petSitter">
+					<img src="img/works/item-3.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Limpamos o local onde vivem!" href="img/works/item-3.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Limpamos o local onde vivem!</h4>
+						<p>Pet Sitter</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item petSitter">
+					<img src="img/works/item-4.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Ajudamos no inicio de tudo!" href="img/works/item-4.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Ajudamos no inicio de tudo!</h4>
+						<p>Pet Sitter</p>
+					</figcaption>
+				</figure>
+			
+				<figure class="mix work-item duplo">
+					<img src="img/works/item-5.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Gérson e Belinha!" href="img/works/item-5.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Gérson e Belinha!</h4>
+						<p>Passeio Duplo</p>
+					</figcaption>
+				</figure>
+
+				<figure class="mix work-item simples">
+					<img src="img/works/item-6.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Sorriso!" href="img/works/item-6.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Passeio Feliz!</h4>
+						<p>Passeio Simples</p>
+					</figcaption>
+				</figure>
+				
+				
+				
+				<figure class="mix work-item petSitter">
+					<img src="img/works/item-7.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Alimentamos e fazemos companhia para gatos!" href="img/works/item-7.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Sitter para qualquer Pet!</h4>
+						<p>Pet Sitter</p>
+					</figcaption>
+				</figure>
+
+				<figure class="mix work-item simples">
+					<img src="img/works/item-9.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Sorriso!" href="img/works/item-9.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Sitter para qualquer Pet!</h4>
+						<p>Passeio Simples</p>
+					</figcaption>
+				</figure>
+				
+				
+				
+			</div>
+		
+
+		</section >
+		
+        <!--
+        End Our Works
+        ==================================== -->
+		
+        <!--
+        Meet Our Team
+        ==================================== -->		
+		
+		<section id="time" class="features">
+			<div class="container">
+				<div class="row ">
+		
+					<div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
+						<h2>Conheça o nosso Time</h2>
+						<div class="devider"><i class="fa fa-paw fa-lg"></i></div>
+					</div>
+					
+					<div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
+						<p>Envie-nos uma mensagem e faça parte desse time!</p>
+					</div>
+
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+						<div class="member-thumb">
+							<img src="img/team/member-1.png" alt="Passeador" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Anderson</h5>
+								<p>Passeador e Cuidador</p>
+								<ul class="social-links text-center">
+									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Anderson T.</h4>
+						<span>Passeador e cuidador</span>
+					</figure>
+					<!-- end single member -->
+					
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="member-thumb">
+							<img src="img/team/member-2.png" alt="Passeador" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Bruno</h5>
+								<p>Passeador</p>
+								<ul class="social-links text-center">
+									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Bruno </h4>
+						<span>Passeador</span>
+					</figure>
+					<!-- end single member -->
+					
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="member-thumb">
+							<img src="img/team/member-3.png" alt="Passeador" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Moacir</h5>
+								<p>Cuidador</p>
+								<ul class="social-links text-center">
+									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Moacir</h4>
+						<span>Cuidador</span>
+					</figure>
+					<!-- end single member -->
+					
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="member-thumb">
+							<img src="img/team/member-4.jpg" alt="cadastra-se" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Cadastre-se!</h5>
+								<p>Faça parte do nosso time</p>
+								<ul class="social-links text-center">
+									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>CADASTRE-SE!</h4>
+						<span>Faça parte do nosso time</span>
+					</figure>
+					
+					<!-- end single member -->
+					
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        End Meet Our Team
+        ==================================== -->
+		
+		<!--
+        Some fun facts
+        ==================================== -->		
+		
+		<section id="facts" class="facts">
+			<div class="parallax-overlay">
+				<div class="container">
+					<div class="row number-counters">
+						
+						<div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
+							<h2>Avaliações</h2>
+							<div class="devider"><i class="fa fa-paw fa-lg"></i></div>
+						</div>
+						
+						<!-- first count item -->
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+							<div class="counters-item">
+								<i class="fa fa-paw	 fa-3x"></i>
+								<strong data-to="1825">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p>Dias sem acidentes</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+							<div class="counters-item">
+								<i class="fa fa-heart fa-3x"></i>
+								<strong data-to="29">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p>Clientes satisfeitos</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+							<div class="counters-item">
+								<i class="fa fa-pencil fa-3x"></i>
+								<strong data-to="15">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p>Projetos Concluídos</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+							<div class="counters-item">
+								<i class="fa fa-calendar fa-3x"></i>
+								<strong data-to="365">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p>Atendimentos por Ano</p>
+							</div>
+						</div>
+						<!-- end first count item -->
+				
+					</div>
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        End Some fun facts
+        ==================================== -->
+		
+		
+		<!--
+        Contact Us
+        ==================================== -->		
+		
+		<section id="contato" class="contact">
+			<div class="container">
+				<div class="row mb50">
+				
+					<div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
+						<h2>Contato</h2>
+						<div class="devider"><i class="fa fa-paw fa-lg"></i></div>
+					</div>
+					
+					<div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
+						<p>Sua opnião é muito importante para nós. Dê a sua dica, sugestão ou faça parte do nosso time enviando uma mensagem.</p>
+					</div>
+					
+					<!-- contact address -->
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
+						<div class="contact-address">
+							<h3>Endereço:</h3>
+							<p> L2 Norte, Brasilia - DF</p>
+							<p>IFB - SGAN Quadra 610 - CEP: 70.830-450</p>
+							<p>(61) 9 9673-4157</p>
+						</div>
+					</div>
+					<!-- end contact address -->
+					
+					<!-- contact form -->
+					<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="contact-form">
+							<h3>Mensagem:</h3>
+							<form action="index.html" id="contact-form">
+								<div class="input-group name-email">
+									<div class="input-field">
+										<input type="text" name="name" id="name" placeholder="Nome" class="form-control">
+									</div>
+									<div class="input-field">
+										<input type="email" name="email" id="email" placeholder="Email" class="form-control">
+									</div>
+								</div>
+								<div class="input-group">
+									<textarea name="message" id="message" placeholder="Mensagem" class="form-control"></textarea>
+								</div>
+								<div class="input-group">
+									<input type="submit" id="form-submit" class="pull-right" value="Enviar">
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- end contact form -->
+					
+					
+					
+				</div>
+			</div>
+			
+			
+			
+		</section>
+		
+        <!--
+        End Contact Us
+        ==================================== -->
+		
+		
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+						<div class="footer-single">
+							<h1 id="footer1" class="showg-font">Passeios Recreativos ®</h1>
+							<p>O passeio com o cachorro é uma das atividades mais importantes na vida de um cão. Ele evita uma série de problemas de saúde, dando a seu cachorro muito mais saúde física e mental. O passeio é indicado para todos os cães, mesmo para os que moram em casa com quintal grande. É durante o passeio que o seu cão interage com outros animais e cheiros, além de gastar toda a sua energia. Outra finalidade do passeio é deixar seus animais mais calmos e submissos!!!</p>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="footer-single">
+							<h6>Celular:</h6>
+							<form id="contact-form" action="index.html" class="subscribe"> 
+								<input type="tel" name="telefone" id="subscribe" onKeyPress="return txtBoxFormat(this, '(99)99999-9999', event);" maxlength="14" data-mask="(00) 0000-0000" data-mask-selectonfocus="true" placeholder="(61) 91234-5678"/> 										  
+								<input type="submit" value="&#8594;" id="subs" data-mask="(00) 0000-0000" data-mask-selectonfocus="true">
+						</form>
+							<p>Envie-nos seu telefone (WhatsApp). Retornaremos assim que possível!</p>
+						</div>
+					</div>
+				
+					
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="footer-single">
+							<h6>Suporte</h6>
+							<ul>
+								<li><a href="#">Contate-nos</a></li>
+								<li><a href="#">Produtos da Loja</a></li>
+								<li><a href="#">Hel Desk</a></li>
+								<li><a href="#">Sala de Controle</a></li>
+							</ul>
+						</div>
+					</div>					
+				</div>
+				 
+				<div class="row">
+					<div class="col-md-12">
+						<p class="copyright text-center"><a href="https://pt-br.facebook.com/passeiosrecreativos/" target="blank">Passeios Recreativos®</a>. Todos os direitos reservados.</a>
+						</p>
+						<p class="text-center">Copyright © 2019</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- jquery.mixitup.min -->
+        <script src="js/jquery.mixitup.min.js"></script>
+		<!-- jquery.parallax -->
+        <script src="js/jquery.parallax-1.1.3.js"></script>
+		<!-- jquery.countTo -->
+        <script src="js/jquery-countTo.js"></script>
+		<!-- jquery.appear -->
+        <script src="js/jquery.appear.js"></script>
+		<!-- Contact form validation -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+		<script src="js/validador.min.js"></script>
+		<!-- Google Map -->
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+		<!-- jquery easing -->
+        <script src="js/wow.min.js"></script>
+		<script>
+			var wow = new WOW ({
+				boxClass:     'wow',      // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset:       120,          // distance to the element when triggering the animation (default is 0)
+				mobile:       false,       // trigger animations on mobile devices (default is true)
+				live:         true        // act on asynchronously loaded content (default is true)
+			  }
+			);
+			wow.init();
+		</script> 
+		<!-- Custom Functions -->
+        <script src="js/custom.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				/* ========================================================================= */
+				/*	Contact Form
+				/* ========================================================================= */
+				
+				$('#contact-form').validate({
+					rules: {
+						name: {
+							required: true,
+							minlength: 2
+						},
+						email: {
+							required: true,
+							email: true
+						},
+						message: {
+							required: true,
+							minlength: 5
+						}
+					},
+					messages: {
+						name: {
+							required: "*Campo NOME obrigatório",
+							minlength: "*Mínimo 2 caracteres"
+						},
+						email: {
+							required: "*Campo E-MAIL obrigatório"
+							//email: "*E-mail invalido"
+						},
+						message: {
+							required: "*Campo MENSAGEM obrigatório",
+							minlength: "*Mínimo 5 caracteres"
+						}
+					},
+					submitHandler: function(form) {
+						$(form).ajaxSubmit({
+							type:"POST",
+							data: $(form).serialize(),
+							url:"process.php",
+							success: function() {
+								$('#contact-form :input').attr('disabled', 'disabled');
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$(this).find(':input').attr('disabled', 'disabled');
+									$(this).find('label').css('cursor','default');
+									$('#success').fadeIn();
+								});
+							},
+							error: function() {
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$('#error').fadeIn();
+								});
+							}
+						});
+					}
+				});
+			});
+		</script>
+    </body>
+</html>
