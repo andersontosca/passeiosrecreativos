@@ -643,9 +643,9 @@
 						<div class="footer-single">
 							<h6>Celular:</h6>
 							<form id="contact-form" action="index.html" class="subscribe"> 
-								<input type="tel" name="telefone" id="subscribe" onKeyPress="return txtBoxFormat(this, '(99)99999-9999', event);" maxlength="14" data-mask="(00) 0000-0000" data-mask-selectonfocus="true" placeholder="(61) 91234-5678"/> 										  
-								<input type="submit" value="&#8594;" id="subs" data-mask="(00) 0000-0000" data-mask-selectonfocus="true">
-						</form>
+								<input type="tel" name="cell" id="subscribe" onKeyPress="return txtBoxFormat(this, '(99)99999-9999', event);" maxlength="14" data-mask="(00) 0000-0000" data-mask-selectonfocus="true" placeholder="(61) 91234-5678"/> 										  
+								<input type="submit" value="&#8594;" id="subs" data-mask="(00) 0000-0000" data-mask-selectonfocus="true">								
+							</form>
 							<p>Envie-nos seu telefone (WhatsApp). Retornaremos assim que possível!</p>
 						</div>
 					</div>
@@ -738,20 +738,28 @@
 						message: {
 							required: true,
 							minlength: 5
+						},
+						cell: {
+							required: true,
+							minlength: 11
 						}
 					},
 					messages: {
 						name: {
-							required: "*Campo NOME obrigatório",
+							required: "*Obrigatório",
 							minlength: "*Mínimo 2 caracteres"
 						},
 						email: {
-							required: "*Campo E-MAIL obrigatório"
+							required: "*Obrigatório",
 							//email: "*E-mail invalido"
 						},
 						message: {
-							required: "*Campo MENSAGEM obrigatório",
+							required: "*Obrigatório",
 							minlength: "*Mínimo 5 caracteres"
+						},
+						cell: {
+							required: "*Obrigatório",
+							//email: "*E-mail invalido"
 						}
 					},
 					submitHandler: function(form) {
